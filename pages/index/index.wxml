@@ -1,0 +1,46 @@
+<view class='bg-title-container' hidden="{{isCopyrightHidden}}">
+  <text class="bg-title">{{copyright}}</text>
+</view>
+<view class='content'>
+  <image class="top-bg" src="{{topBgUrl}}" mode="cover" bindtap="bindImageTap"></image>
+  <view class="card-container">
+    <text class="card-title1">{{todayData.year}}年{{todayData.month}}月</text>
+    <text class="card-title2">{{todayData.lunar}}</text>
+    <text class="card-title3">{{todayData.day}}</text>
+    <text class="card-title4">{{todayData.week}}</text>
+    <view class="card-title5-container">
+      <image class="quo quo-left" src="/assets/quo-left.png" mode="cover"></image>
+      <text class="card-title5">{{todayData.slogan}}</text>
+      <image class="quo quo-right" src="/assets/quo-right.png" mode="cover"></image>
+    </view>
+    <view class='card-line1'></view>
+    <view class='card-line2'></view>
+     <view class='card-bottom-container'>
+      <view class='card-bottom-item'>
+        <image class="card-circle card-yi" src="/assets/yi-icon.png" mode="cover"></image>
+        <view class='card-dot'></view>
+        <text class='card-bottom-title'>{{todayData.suitable}}</text>
+      </view>
+      <view class='card-bottom-item'>
+        <image class="card-circle card-ji" src="/assets/ji-icon.png" mode="cover"></image>
+        <view class='card-dot'></view>
+        <text class='card-bottom-title'>{{todayData.avoid}}</text>
+      </view>
+    </view> 
+  </view>
+  <view class='share-title-container'>
+    <view class='share-line'></view>
+    <text class='share-title'>分享给好友 开始一天好运气</text>
+    <view class='share-line'></view>
+  </view>
+  <view class='share-icon-container'>
+    <button open-type='share' plain="true" class='share-bt'>
+      <image class="share-icon" src="/assets/wx.png" mode="cover"></image>
+    </button>
+     <button plain="true" class='share-bt' bindtap='bindShareTap'>
+      <image class="share-icon" src="/assets/wx-moment.png" mode="cover"></image>
+    </button> 
+  </view>
+</view>
+
+<canvas canvas-id="share-canvas" style="width: 750rpx;height: 680px;opacity:0;position:fixed;left:-9999px;top:-9999px;"></canvas>  
