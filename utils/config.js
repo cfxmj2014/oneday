@@ -1,17 +1,17 @@
 module.exports = {
   ajaxData: {
     today: {
-      url: 'https://dev.xdooi.com/today',
+      url: '',
       data: {
       }
     },
     getTopImg: {
-      url: 'https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1',
+      url: '',
       data: {}
     }
   },
   href: {
-    topImg: 'https://dev.xdooi.com/bingimage/bgTop.jpg'
+    topImg: ''
   },
   text: {
     serverError: '网络似乎有问题，请稍后重试。',

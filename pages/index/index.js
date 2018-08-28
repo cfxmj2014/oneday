@@ -1,6 +1,3 @@
-/**
-* @author chenfa <chenfa@jd.com> on 2018/07/18
-*/
 const {API} = require('../../utils/api.js')
 
 const app = getApp()
